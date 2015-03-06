@@ -213,8 +213,6 @@ public class Game {
             return MoveResult.PIECE_CANNOT_MOVE;
         }
 
-        // copy the board before (immutable data)
-        // if memory usage to high consider creating board transactions that can be rolled back
         Board newBoard = new Board(on);
 
         ArrayList<BoardAction> actions = new ArrayList<BoardAction>();
